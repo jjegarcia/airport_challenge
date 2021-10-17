@@ -1,6 +1,7 @@
 require_relative '../lib/airport'
 require_relative '../lib/plane'
 require_relative '../lib/weather'
+require_relative '../lib/controller'
 DEFAULT_AIRPORT_LANDED_PLANES = 0
 CAPACITY = 30
 
@@ -30,7 +31,6 @@ describe Airport do
   end
   it 'landing should prevent landing in stormy weather' do
     plane = Plane.new
-    # subject.update_weather(WEATHER_STATES[:stormy])
     allow(subject).to receive(:stormy?).and_return WEATHER_STATES[:stormy]
     expect { subject.land(plane) }.to raise_error('stormy weather')
   end
