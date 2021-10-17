@@ -25,9 +25,11 @@ class Airport
   def last_space
     @spaces[-1]
   end
+
   def land(plane)
     controller.land(plane,@spaces,capacity,stormy?,id)
   end
+
   def take_off
     controller.take_off(@spaces,stormy?,id)
   end
