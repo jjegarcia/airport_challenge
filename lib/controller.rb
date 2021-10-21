@@ -1,12 +1,15 @@
 require 'airport'
 
 class Controller
+  attr_reader :airport
 
-  def initialize(airport)
+  def id
+    @airport.id
+  end
+
+  def set_airport(airport)
     @airport = airport
   end
 
-  def airport
-    airport.id
-  end
+
 end

@@ -1,3 +1,5 @@
+require 'weather'
+require 'controller'
 DEFAULT_CAPACITY = 20
 
 class Airport
@@ -10,6 +12,7 @@ class Airport
     @capacity = capacity
     @spaces = []
     @weather = Weather.new
+    @controller = Controller.new
   end
 
   def stormy?
