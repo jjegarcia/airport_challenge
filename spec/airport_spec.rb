@@ -1,6 +1,6 @@
-require_relative '../lib/airport'
-require_relative '../lib/plane'
-require_relative '../lib/weather'
+require 'airport'
+require 'plane'
+require 'weather'
 DEFAULT_AIRPORT_LANDED_PLANES = 0
 CAPACITY = 30
 

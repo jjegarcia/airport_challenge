@@ -1,4 +1,4 @@
-require_relative '../lib/plane'
+require 'plane'
 STATES = { landed: true, in_air: false }.freeze
 AIRPORT_ID = 33
 NEW_AIRPORT_ID = 44

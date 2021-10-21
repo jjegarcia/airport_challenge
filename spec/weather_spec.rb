@@ -1,4 +1,4 @@
-require_relative '../lib/weather'
+require 'weather'
 describe Weather do
   before do
 
