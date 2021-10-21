@@ -11,5 +11,4 @@ class Controller
     @airport = airport
   end
 
-
 end
