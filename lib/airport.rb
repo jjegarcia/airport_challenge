@@ -7,12 +7,10 @@ class Airport
   attr_reader :capacity
   attr_reader :weather
 
-  def initialize(capacity = DEFAULT_CAPACITY)
+  def initialize(capacity = DEFAULT_CAPACITY, weather= Weather.new, controller= Controller.new)
     @id = 1
     @capacity = capacity
     @spaces = []
-    @weather = Weather.new
-    @controller = Controller.new
   end
 
   def stormy?
